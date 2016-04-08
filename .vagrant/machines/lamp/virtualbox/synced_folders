@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/website":{"guestpath":"/var/www/website","hostpath":"/Users/Fuzzy/electron-setup/src","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/Fuzzy/electron-setup","disabled":false}}}
