@@ -3,6 +3,8 @@ Electron = (function () {
 	var _defined_constants = {
 		READ: "read",
 		WRITE: "write",
+		HIGH: 1,
+		LOW: 0
 	};
 
 	var _constants = Object.freeze(_defined_constants);
@@ -72,6 +74,7 @@ Electron = (function () {
 	return {
 		readPin: _readPin,
 		writePin: _writePin,
+		constants: _constants
 	};
 
 })();
