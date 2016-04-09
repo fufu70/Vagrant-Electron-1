@@ -9,7 +9,7 @@ Vagrant.configure(2) do |config|
 	config.ssh.username = "vagrant"
 	config.ssh.password = "vagrant"
 
-	config.vm.synced_folder "src/", "/var/www/website"
+	config.vm.synced_folder "src/", "/var/www/website", owner: "www-data", group: "www-data", create: true
 
 	# Begin Configuring
 	config.vm.define "lamp" do|lamp|

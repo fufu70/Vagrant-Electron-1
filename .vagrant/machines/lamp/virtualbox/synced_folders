@@ -1,1 +1,1 @@
-{"virtualbox":{"/var/www/website":{"guestpath":"/var/www/website","hostpath":"/Users/Fuzzy/electron-setup/src","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/Fuzzy/electron-setup","disabled":false}}}
+{"virtualbox":{"/var/www/website":{"owner":"www-data","group":"www-data","create":true,"guestpath":"/var/www/website","hostpath":"/Users/Fuzzy/electron-setup/src","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/Fuzzy/electron-setup","disabled":false}}}
