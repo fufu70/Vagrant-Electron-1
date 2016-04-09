@@ -31,10 +31,12 @@ Electron = (function () {
 				value: '',
 			},
 			success: function(data) {
-				callback(data);
+				params.callback(data);
 			},
 			error: function(e) {
-				console.log(e);
+				var str = e.responseText;
+				str = str.substring(0, str.length - 4);
+				params.callback(JSON.parse(str));
 			}
 		});
 	};
@@ -62,10 +64,12 @@ Electron = (function () {
 				value: params.value,
 			},
 			success: function(data) {
-				callback(data);
+				params.callback(data);
 			},
 			error: function(e) {
-				console.log(e);
+				var str = e.responseText;
+				str = str.substring(0, str.length - 4);
+				params.callback(JSON.parse(str));
 			}
 		});
 
