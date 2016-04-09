@@ -49,7 +49,7 @@ Electron = (function () {
 
 	    params = params || {};
 	    params.pin = params.hasOwnProperty('pin') ? params.pin : 'D6';
-	    params.value = params.hasOwnProperty('value') ? params.value : 0;
+	    params.value = params.hasOwnProperty('value') ? params.value : _constants.LOW;
 	    params.callback = params.hasOwnProperty('callback') ? params.callback : (function() {});
 
 	    $.ajax({
